@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array-concat</title>
+</head>
+<body>
+    <script>
+        const pets = ['개', '고양이'];
+        const birds = ['앵무새', '꾀꼬리'];
+        const beasts = ['사자', '호랑이'];
+
+        const animals = pets.concat(birds, beasts); // 배열 합치기
+
+        document.write(`${animals.join(' ')} <br>`); // 공백(' ')으로 구분
+        document.write(`${animals.toString()} <br>`); // 쉼표(,)로 구분
+        document.write(`${animals} <br>`); // toString과 동일
+    </script>
+</body>
+</html>

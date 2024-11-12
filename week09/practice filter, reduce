@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const products = [
+            { name: "apple", price: 30 },
+            { name: "banana", price: 20 },
+            { name: "orange", price: 50 },
+            { name: "grape", price: 40 },
+            { name: "kiwi", price: 60 }
+        ];
+        const filtered_products = products.filter(function(item) {
+            return item.price >= 30;
+        })
+        
+        const sum = filtered_products.reduce(function(total, item) {
+            return total + item.price;
+        }, 0);
+
+        document.write(`Filtered products: ${JSON.stringify(filtered_products)} <br>`);
+        document.write(`Total price of filtered products: ${sum}`);
+    </script>
+</body>
+</html>

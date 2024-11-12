@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students = [
+            { name: "Alice", score: 85 },
+            { name: "Bob", score: 90 },
+            { name: "Charlie", score: 78 },
+            { name: "David", score: 92 },
+            { name: "Eve", score: 88 }
+        ];
+        students.forEach(function(value) {
+            document.write(`학생 이름: ${value.name}, 성적: ${value.score} <br>`);
+        });
+
+        let newArray = students.map(function(value) {
+            return value.score + 5;
+        });
+        document.write(`새로운 성적 배열: [${newArray.join(', ')}]`);
+    </script>
+</body>
+</html>

@@ -12,13 +12,15 @@
             let obj = {
                 "name": "정부장", "area": "서울"
             }
-            let idxNum = $.inArray("부산", arr1);
+            let idxNum = $.inArray("부산", arr1); // arr1에 부산이 몇 번째 인덱스에 있는지 >> 2
             document.write(idxNum + "<br>");
-            let okArray1 = $.isArray(arr1);
-            let okArray2 = $.isArray(obj);
+            
+            let okArray1 = $.isArray(arr1);    // arr1이 배열인지 >> true
+            let okArray2 = $.isArray(obj);    // obj가 배열인지 >> false
             document.write(okArray1 + "<br>");
             document.write(okArray2 + "<br>");
-            let arr3 = $.merge(arr2, arr1);
+            
+            let arr3 = $.merge(arr2, arr1);    // arr2와 arr1을 합침(,로 구분)
 
             // arr3.forEach((list, index) => {
             //     document.write(list + " ");
